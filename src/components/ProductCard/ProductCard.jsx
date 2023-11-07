@@ -18,12 +18,12 @@ const ProductCard = (props) => {
                 <span className='product-category'>{category}</span>
                 <h3><Link to="/">{title}</Link ></h3>
                 <div className="product-prices d-flex">
-                    {oldPrice ? (<><del className='product-price pe-2'>£{oldPrice}.00</del><span className='product-price'>£{price}.00</span></>) : (<span className='product-price'>£{price}.00</span>)}
+                    {oldPrice ? (<><del className='product-price pe-2'>₹{oldPrice}.00</del><span className='product-price'>₹{price}.00</span></>) : (<span className='product-price'>₹{price}.00</span>)}
                 </div>
             </div>
             <div className="product-card-buttons d-flex flex-column">
                 <button onClick={() => { dispatch(addToCart(item)) }} className='add-cart'><HiShoppingCart /><span>Add to cart</span></button>
-                <button className='quick-view'><FaEye /><span>Quick View</span></button>
+                
             </div>
             {oldPrice && <span className="product-sale">Sale!</span>}
         </div>

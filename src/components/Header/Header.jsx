@@ -50,13 +50,17 @@ const Header = () => {
                         </div>
                         <ul className='dekstop-nav list-unstyled m-0'>
                             <li><button className='clean-button' onClick={() => { changeCategory("All") }}>All Products</button></li>
-                            <li><button className='clean-button' onClick={() => { changeCategory("Sofa") }}>Sofa</button></li>
-                            <li><button className='clean-button' onClick={() => { changeCategory("Chair") }}>Chair</button></li>
-                            <li><button className='clean-button' onClick={() => { changeCategory("Table") }}>Table</button></li>
+                            <li><button className='clean-button' onClick={() => { changeCategory("Chocolates") }}>Chocolates</button></li>
+                            <li><button className='clean-button' onClick={() => { changeCategory("Candies") }}>Candies</button></li>
+                            <li><button className='clean-button' onClick={() => { changeCategory("Brownies") }}>Brownies</button></li>
+                            <li><Link to="/contact"><button className='clean-button'>Contact Us</button></Link></li>
+                            <li><Link to="/LoginPage"><button className='clean-button'>LogIn</button></Link></li>
+                           
+               
                         </ul>
                     </div>
                     <div className="header-right">
-                        <p className='price'>£{getTotalPrice()}.00</p>
+                        <p className='price'>₹{getTotalPrice()}.00</p>
                         <div className='cart'>
                             <Link to="/cart"><HiShoppingCart /></Link>
                             <p className='cart-quantity'>{getTotalQuantity()}</p>
@@ -69,9 +73,10 @@ const Header = () => {
             </div>
             <ul className={nav ? 'mobile-nav open-nav  list-unstyled m-0' : 'mobile-nav list-unstyled m-0'}>
                 <li><button className='clean-button' onClick={() => { changeCategory("All"); closeHamburger() }}>All Products</button></li>
-                <li><button className='clean-button' onClick={() => { changeCategory("Sofa"); closeHamburger() }}>Sofa</button></li>
-                <li><button className='clean-button' onClick={() => { changeCategory("Chair"); closeHamburger() }}>Chair</button></li>
-                <li><button className='clean-button' onClick={() => { changeCategory("Table"); closeHamburger() }}>Table</button></li>
+                <li><button className='clean-button' onClick={() => { changeCategory("Chocolates"); closeHamburger() }}>Chocolates</button></li>
+                <li><button className='clean-button' onClick={() => { changeCategory("Candies"); closeHamburger() }}>Candies</button></li>
+                <li><button className='clean-button' onClick={() => { changeCategory("Brownies"); closeHamburger() }}>Brownies</button></li>
+               
             </ul>
         </header>
     )

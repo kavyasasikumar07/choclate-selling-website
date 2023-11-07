@@ -32,7 +32,7 @@ const CartItem = (props) => {
                 </button>
             </div>
             <div className="col-md-3 col-lg-2 p-0">
-                <h6 className="mb-0">£{price * quantity}.00</h6>
+                <h6 className="mb-0">₹{price * quantity}.00</h6>
             </div>
             <div className="col-md-1 col-lg-1 col-xl-1 text-end">
                 <button onClick={() => dispatch(removeItem(item.id))} className='cart-trash'><IoIosCloseCircleOutline /></button>

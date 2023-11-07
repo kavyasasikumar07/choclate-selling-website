@@ -16,7 +16,7 @@ const HomeCollectionItem = (props) => {
                 <div className="title-content">
                     <h2>{title}</h2>
                     <h6 className='mt-3'>{comment}</h6>
-                    <button onClick={() => navigate("/shop")} className='general-button mt-4'>View Collections</button>
+                    <button onClick={() => navigate("/shop")} className='general-button mt-4'>View More</button>
                 </div>
             </div>
         </div>

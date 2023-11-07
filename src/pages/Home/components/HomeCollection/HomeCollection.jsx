@@ -6,15 +6,15 @@ const HomeCollection = () => {
         <div className="home-collection">
             <div className="page-container">
                 <HomeCollectionItem
-                    image='https://websitedemos.net/furniture-store-04/wp-content/uploads/sites/155/2020/02/chair.jpg'
-                    title='Chair Collection!'
-                    comment='Launch Offer 15% Off!'
+                    image='https://www.tennessean.com/gcdn/-mm-/ecf7500611857c298a730ab23bac7c03a3045ed5/c=0-16-1200-694/local/-/media/2017/11/17/TennGroup/Nashville/636465397762397494-Cocoa.jpeg?width=1200&disable=upscale&format=pjpg&auto=webp'
+                    title='Healthy Made!'
+                    comment='25% Off!'
                     reverse={false}
                 />
                 <HomeCollectionItem
-                    image='https://websitedemos.net/furniture-store-04/wp-content/uploads/sites/155/2020/02/wooden-chair-collections.jpg'
-                    title='Modern Collection!'
-                    comment='New Season Stock'
+                    image='https://www.tennessean.com/gcdn/-mm-/ecf7500611857c298a730ab23bac7c03a3045ed5/c=0-16-1200-694/local/-/media/2017/11/17/TennGroup/Nashville/636465397762397494-Cocoa.jpeg?width=1200&disable=upscale&format=pjpg&auto=webp'
+                    title='Organic Made!'
+                    comment='View More'
                     reverse={true}
                 />
             </div>

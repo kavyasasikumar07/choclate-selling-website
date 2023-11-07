@@ -2,11 +2,11 @@
 @import "../../../../vendors/variables";
 
 .collection-title {
-    background-image: url(https://websitedemos.net/furniture-store-02/wp-content/uploads/sites/155/2018/01/pic36-free-img.jpg);
+    background-image: url();
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #f4f4f4;
+    background-color: #f1bee665;
     @include flexCenter;
     flex-direction: column;
 
@@ -24,13 +24,13 @@
 
         h2 {
             font-weight: 500;
-            color: $main-color;
+            color: rgb(0, 0, 0);
         }
 
         h6 {
             font-size: 15px;
             font-weight: 500;
-            color: $main-color;
+            color: rgba(243, 209, 158, 0.979);
         }
     }
 }

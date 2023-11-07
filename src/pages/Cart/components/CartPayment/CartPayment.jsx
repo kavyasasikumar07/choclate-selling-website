@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import CartItem from '../CartItem/CartItem';
 import { HiOutlineArrowNarrowLeft } from "react-icons/hi";
 import "./cartPayment.scss";
-
 const CartPayment = () => {
     const cart = useSelector((state) => state.cart.cart);
     const getTotalQuantity = () => {
@@ -56,25 +55,32 @@ const CartPayment = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-lg-4 bg-grey">
+                                    <div className="col-lg-4 bg">
                                         <div className="p-5">
-                                            <h3 className="fw-bold mb-5 mt-2 pt-1 cart-head">Summary</h3>
+                                        <img
+                                                src="https://previews.123rf.com/images/mistac/mistac1308/mistac130800014/21657504-a-shopping-cart-trolley-with-bars-of-chocolate-on-a-white-background.jpg"
+                                                alt="Cart"
+                                                style={{ width: '200px', height: '300px' }} // Adjust the width and height as needed
+                                            />
+                                            <br />
+                                            {/* <h5 className="text-uppercase mb-3">Give code</h5> */}
 
-                                            <h5 className="text-uppercase mb-3">Give code</h5>
-
-                                            <div className="mb-5 cart-head">
+                                            {/* <div className="mb-5 cart-head">
                                                 <div className="form-outline">
                                                     <input type="text" id="form3Examplea2" className="form-control form-control-lg" />
                                                     <label className="form-label" htmlFor="form3Examplea2">Enter your code</label>
                                                 </div>
-                                            </div>
+                                            </div> */}
+                                            
+<br></br><hr></hr>
+
 
 
                                             <div className="d-flex justify-content-between mb-5">
                                                 <h5 className="text-uppercase">Total price</h5>
-                                                <h5>£ {getTotalPrice()}.00</h5>
+                                                <h5>₹ {getTotalPrice()}.00</h5>
                                             </div>
-                                            <button type="button" className="general-button">Proceed To Checkout</button>
+                                            <button type="button" className="general-button"><Link to="/Login">Proceed To Checkout</Link></button>
                                         </div>
                                     </div>
                                 </div>

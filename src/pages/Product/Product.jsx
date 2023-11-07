@@ -30,7 +30,7 @@ const Product = () => {
                     <span data-aos="fade-left" className='product-category'>{product?.category}</span>
                     <p data-aos="fade-left">{product?.content}</p>
                     <div data-aos="fade-left" className="product-prices d-flex pb-2">
-                        {product?.oldPrice ? (<><del className='product-price pe-2'>£{product?.oldPrice}.00</del><span className='product-price'>£{product?.price}.00</span></>) : (<span className='product-price'>£{product?.price}.00</span>)}
+                        {product?.oldPrice ? (<><del className='product-price pe-2'>₹{product?.oldPrice}.00</del><span className='product-price'>₹{product?.price}.00</span></>) : (<span className='product-price'>₹{product?.price}.00</span>)}
                     </div>
                     <button data-aos="fade-left" className='general-button' onClick={() => dispatch(addToCart(product))}>Add to cart</button>
                 </div>
